@@ -92,11 +92,18 @@ body{-webkit-text-size-adjust:100%}
 .sheet{margin:12px auto;width:calc(210mm*var(--z,1));height:calc(297mm*var(--z,1));box-shadow:0 1px 6px rgba(0,0,0,.12)}
 .sheet>.page{margin:0 !important;box-shadow:none !important;transform:scale(var(--z,1));transform-origin:0 0}
 @media print{.dl{display:none}.sheet{margin:0;width:auto;height:auto;box-shadow:none}.sheet>.page{transform:none}}
+.promo{max-width:210mm;margin:14px auto 0;padding:0 12px}
+.promo-in{background:#F1EFEB;border:2px solid #D8B364;border-radius:10px;padding:18px 20px;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.promo .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8a6d24;font-weight:500}
+.promo p{font-size:15px;line-height:1.5;color:#17191c}
+.promo-btn{align-self:stretch;text-align:center;text-decoration:none;background:#D8B364;color:#0C1D38;font-weight:800;font-size:16px;border-radius:8px;padding:14px 20px;letter-spacing:.01em}
+.promo-btn:hover{background:#e4c47a}
+@media print{.promo{display:none}}
 </style></head><body>
 <svg width="0" height="0" style="position:absolute"><defs><symbol id="pdfm" viewBox="5 3.5 54 54">
 <path d="M21 51 A22 22 0 1 1 43 51" stroke="#D8B364" stroke-width="6" stroke-linecap="round" fill="none"/>
 <circle cx="32" cy="22" r="4.2" fill="#3FD3DE"/><circle cx="24" cy="36" r="4.2" fill="#EF4C9B"/><circle cx="40" cy="36" r="4.2" fill="#F5C93B"/></symbol></defs></svg>
-<div class="dl"><a class="dl-btn" href="Eserciziario-Onde-PdFM.pdf" download="Eserciziario-Onde-PdFM.pdf" type="application/pdf"><span class="lbl">Scarica il PDF</span><span class="meta">Eserciziario onde meccaniche · 9 pagine A4 · 0,8 MB</span></a></div><section class="page cover">
+<div class="dl"><a class="dl-btn" href="Eserciziario-Onde-PdFM.pdf" download="Eserciziario-Onde-PdFM.pdf" type="application/pdf"><span class="lbl">Scarica il PDF</span><span class="meta">Eserciziario onde meccaniche · 9 pagine A4 · 0,8 MB</span></a></div><div class="promo"><div class="promo-in"><p class="kicker">Estratto gratuito</p><p>Questi cinque esercizi sono un <b>estratto gratuito</b> dello <b>Studypack</b> del Portale dei Futuri Medici: una parte piccola del lavoro completo, con la lezione <i>Onde meccaniche e acustica</i> ferma all'intensità e alla distanza. Nello Studypack trovi tutto il resto: altri esercizi svolti, le schede di sintesi, le trappole d'esame e i quiz, anche su suono, decibel ed effetto Doppler.</p><a class="promo-btn" href="https://portaledeifuturimedici.com/pacchetto/">Guarda lo Studypack completo →</a></div></div><section class="page cover">
 <div class="content" style="gap:0">
   <div class="top"><div class="brand"><svg><use href="#pdfm"/></svg><div class="name">PORTALE DEI<br>FUTURI MEDICI<span>PdFM</span></div></div><p class="eyebrow">Semestre filtro · Fisica</p></div>
   <div style="margin-top:30mm; display:flex; flex-direction:column; gap:5mm">
