@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex">
+<title>Le onde, cinque esercizi · Portale dei Futuri Medici</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>:root { --navy:#0C1D38; --ink:#17191c; --ink-2:#3d3b36; --muted:#55534e; --subtle:#7d7a73; --line:#dbd8d2; --rule:#b9b4aa; --soft:#F1EFEB;
+ --oro:#D8B364; --accento:#8a6d24; --fisica:#C4176C; --ciano:#3FD3DE; --fucsia:#EF4C9B; --giallo:#F5C93B;
+ --sans: Archivo,"Helvetica Neue",Helvetica,Arial,sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace; }
+@page { size: A4; margin: 0; }
+* { box-sizing:border-box; margin:0; padding:0; }
+html,body { background:#e9e7e3; }
+body { font-family:var(--sans); color:var(--ink); font-size:10.5pt; line-height:1.45; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+@media print { html,body { background:#fff; } .page { margin:0 !important; box-shadow:none !important; } }
+.page { width:210mm; height:297mm; padding:14mm 15mm 0; margin:8mm auto; background:#fff; position:relative; overflow:hidden; display:flex; flex-direction:column; gap:5mm; break-after:page; box-shadow:0 1px 6px rgba(0,0,0,.12); }
+.page:last-child { break-after:auto; }
+.content { flex:1; display:flex; flex-direction:column; gap:4.5mm; min-height:0; }
+.head { display:flex; justify-content:space-between; align-items:center; padding-bottom:3mm; border-bottom:.3mm solid var(--line); }
+.eyebrow { font-family:var(--mono); font-size:8.6pt; letter-spacing:.14em; text-transform:uppercase; color:var(--subtle); }
+.eyebrow b { color:var(--navy); font-weight:500; }
+.foot { height:13mm; display:flex; align-items:center; justify-content:space-between; border-top:.3mm solid var(--line); flex:none; }
+.foot .brand { display:flex; align-items:center; gap:2.5mm; font-weight:700; font-size:8.4pt; letter-spacing:.06em; color:var(--navy); }
+.foot .brand svg { width:6mm; height:6mm; }
+.foot .num { font-family:var(--mono); font-size:8.6pt; letter-spacing:.1em; color:var(--subtle); }
+h1 { font-size:25pt; line-height:1.05; letter-spacing:-.025em; color:var(--navy); font-weight:700; }
+h3 { font-size:11.5pt; line-height:1.2; color:var(--navy); font-weight:700; }
+.lead { font-size:10.8pt; color:var(--ink-2); line-height:1.45; }
+.small { font-size:9.2pt; color:var(--muted); line-height:1.4; }
+.kicker { font-family:var(--mono); font-size:8.4pt; letter-spacing:.14em; text-transform:uppercase; color:var(--accento); font-weight:500; }
+.tag { display:inline-flex; align-items:center; gap:1.6mm; font-family:var(--mono); font-size:8.2pt; font-weight:500; letter-spacing:.12em; text-transform:uppercase; padding:.9mm 2.4mm; border-radius:1mm; white-space:nowrap; }
+.tag.casa { background:var(--oro); color:var(--navy); }
+.tag.casa::before { content:""; width:1.8mm; height:1.8mm; border-radius:50%; background:var(--navy); }
+.box { border:.35mm solid var(--line); border-radius:1.5mm; padding:4mm 5mm; display:flex; flex-direction:column; gap:2.2mm; }
+.box.soft { background:var(--soft); border-color:var(--soft); }
+.box.navy { background:var(--navy); border-color:var(--navy); color:#fff; }
+.box.gold { border-color:var(--oro); border-width:.5mm; }
+.mono-f { font-family:var(--mono); font-size:10pt; color:var(--navy); font-weight:500; }
+.badge { flex:none; width:7mm; height:7mm; border-radius:50%; background:var(--navy); color:#fff; font-weight:700; font-size:10pt; display:flex; align-items:center; justify-content:center; }
+.badge.out { background:#fff; color:var(--navy); border:.4mm solid var(--navy); }
+.q { display:flex; gap:3.5mm; align-items:flex-start; }
+.q > div { flex:1; display:flex; flex-direction:column; gap:1mm; }
+.q p { font-size:10.4pt; color:var(--ink); }
+.lines { display:flex; flex-direction:column; overflow:hidden; }
+.lines > i { flex:none; height:7.4mm; border-bottom:.3mm solid var(--rule); }
+.fill { display:flex; align-items:flex-end; gap:2.5mm; }
+.fill .lbl { white-space:nowrap; font-weight:600; color:var(--navy); }
+.fill .ln { flex:1; border-bottom:.3mm solid var(--rule); height:6mm; }
+.kit { margin-top:auto; gap:2mm; }
+.kr { display:grid; grid-template-columns:11mm 1fr; gap:2.5mm; align-items:start; padding-top:1.4mm; border-top:.25mm solid var(--line); }
+.kr:first-of-type { border-top:none; }
+.kn { font-family:var(--mono); font-weight:500; font-size:9.5pt; color:var(--navy); background:var(--oro); border-radius:1mm; text-align:center; padding:.6mm 0; }
+.kr b { display:block; font-size:9.8pt; color:var(--navy); }
+.kr span:not(.kn) { font-size:9pt; color:var(--muted); line-height:1.35; }
+.cover { padding:18mm 18mm 0; }
+.cover .top { display:flex; justify-content:space-between; align-items:center; }
+.cover .brand { display:flex; align-items:center; gap:3.5mm; }
+.cover .brand svg { width:13mm; height:13mm; }
+.cover .brand .name { font-weight:700; font-size:10pt; letter-spacing:.07em; color:var(--navy); line-height:1.15; }
+.cover .brand .name span { display:block; font-family:var(--mono); font-weight:500; font-size:8.4pt; letter-spacing:.3em; color:var(--accento); }
+.cover h1 { font-size:46pt; letter-spacing:-.04em; line-height:.98; }
+.cover .sub { font-size:17pt; font-weight:600; color:var(--accento); letter-spacing:-.02em; line-height:1.15; }
+.howto { list-style:none; display:flex; flex-direction:column; gap:2.4mm; counter-reset:h; margin-top:1mm; }
+.howto li { display:flex; gap:3mm; counter-increment:h; font-size:10pt; }
+.howto li::before { content:counter(h); flex:none; width:5.5mm; height:5.5mm; border-radius:50%; background:var(--navy); color:#fff; font-weight:700; font-size:8.5pt; display:flex; align-items:center; justify-content:center; margin-top:.3mm; }
+table { width:100%; border-collapse:collapse; }
+.map th { font-family:var(--mono); font-weight:500; font-size:8pt; color:var(--subtle); text-align:center; padding:0 0 1.5mm; }
+.map td { border-top:.3mm solid var(--line); text-align:center; height:7.6mm; color:var(--fisica); font-size:11pt; }
+.map td.tn { text-align:left; color:var(--navy); font-weight:600; font-size:9.8pt; }
+.stuck th { font-family:var(--mono); font-weight:500; font-size:8pt; letter-spacing:.1em; text-transform:uppercase; color:var(--subtle); text-align:left; padding:0 0 2mm; }
+.stuck td { border-top:.3mm solid var(--line); padding:2.6mm 2mm 2.6mm 0; font-size:10pt; vertical-align:top; }
+.solgroup { display:flex; flex-direction:column; gap:2mm; padding-bottom:2mm; }
+.s { display:flex; gap:3mm; align-items:flex-start; }
+.s p { font-size:9.9pt; line-height:1.38; }
+.s .badge { width:6mm; height:6mm; font-size:8.8pt; margin-top:.2mm; }
+.opts { display:flex; flex-direction:column; gap:1.5mm; margin-top:1.5mm; }
+.o { display:flex; gap:2.6mm; align-items:flex-start; font-size:10pt; line-height:1.35; }
+.o .ol { flex:none; width:5.2mm; height:5.2mm; border:.35mm solid var(--navy); border-radius:50%; font-family:var(--mono); font-weight:500; font-size:8.2pt; color:var(--navy); display:flex; align-items:center; justify-content:center; margin-top:.2mm; }
+.opts { gap:.6mm; margin-top:1mm; }
+.o { font-size:9.5pt; line-height:1.25; gap:2.2mm; }
+.o .ol { width:4.6mm; height:4.6mm; font-size:7.6pt; margin-top:.1mm; }
+.page .content:has(.opts) { gap:3mm; }
+.page .content:has(.opts) .q p { font-size:10pt; }
+.page .content:has(.opts) .kit { gap:1mm; padding:3mm 4.5mm; }
+.page .content:has(.opts) .kr { padding-top:1mm; }
+.page .content:has(.opts) .kr span:not(.kn) { font-size:8.6pt; line-height:1.3; }
+.page .content:has(.opts) h1 { font-size:22pt; }
+
+body{-webkit-text-size-adjust:100%}
+.dl{max-width:210mm;margin:14px auto 0;padding:0 12px;display:flex;justify-content:center}
+.dl-btn{display:flex;flex-direction:column;gap:2px;text-decoration:none;background:#0C1D38;color:#fff;border-radius:8px;padding:12px 20px;text-align:center;border:2px solid #D8B364}
+.dl-btn .lbl{font-family:var(--mono);font-size:13px;font-weight:500;letter-spacing:.1em;text-transform:uppercase}
+.dl-btn .meta{font-size:12px;color:#c9d3e3}
+.sheet{margin:12px auto;width:calc(210mm*var(--z,1));height:calc(297mm*var(--z,1));box-shadow:0 1px 6px rgba(0,0,0,.12)}
+.sheet>.page{margin:0 !important;box-shadow:none !important;transform:scale(var(--z,1));transform-origin:0 0}
+@media print{.dl{display:none}.sheet{margin:0;width:auto;height:auto;box-shadow:none}.sheet>.page{transform:none}}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs><symbol id="pdfm" viewBox="5 3.5 54 54">
+<path d="M21 51 A22 22 0 1 1 43 51" stroke="#D8B364" stroke-width="6" stroke-linecap="round" fill="none"/>
+<circle cx="32" cy="22" r="4.2" fill="#3FD3DE"/><circle cx="24" cy="36" r="4.2" fill="#EF4C9B"/><circle cx="40" cy="36" r="4.2" fill="#F5C93B"/></symbol></defs></svg>
+<div class="dl"><a class="dl-btn" href="Eserciziario-Onde-PdFM.pdf" download="Eserciziario-Onde-PdFM.pdf" type="application/pdf"><span class="lbl">Scarica il PDF</span><span class="meta">Eserciziario onde meccaniche · 9 pagine A4 · 0,8 MB</span></a></div><section class="page cover">
+<div class="content" style="gap:0">
+  <div class="top"><div class="brand"><svg><use href="#pdfm"/></svg><div class="name">PORTALE DEI<br>FUTURI MEDICI<span>PdFM</span></div></div><p class="eyebrow">Semestre filtro · Fisica</p></div>
+  <div style="margin-top:30mm; display:flex; flex-direction:column; gap:5mm">
+    <p class="kicker">Il quaderno degli esercizi</p>
+    <h1>Le onde,<br>cinque esercizi.</h1>
+    <p class="sub">Con il kit di partenza<br>accanto, un attrezzo alla volta.</p>
+  </div>
+  <div class="box soft" style="margin-top:14mm">
+    <h3>Come si usa</h3>
+    <ol class="howto">
+      <li><span>Per ogni esercizio provi da solo, sulle righe. Le soluzioni sono alla fine, con i passaggi.</span></li>
+      <li><span>Sotto ogni esercizio trovi il riquadro <b>Dal kit di partenza</b>: ti dice quale attrezzo (§) aprire se ti blocchi, e perché ti serve proprio lì.</span></li>
+      <li><span>Gli esercizi <b>3</b> e <b>5</b> sono a <b>risposta multipla</b>, come all'esame: cinque opzioni, una sola giusta. Prima ragiona, poi guarda le opzioni.</span></li>
+      <li><span>Dopo ogni risultato fai i tre controlli del kit: <b>le unità tornano? l'ordine di grandezza è plausibile? il verso è quello giusto?</b></span></li>
+    </ol>
+  </div>
+  <div style="margin-top:9mm">
+    <p class="kicker" style="margin-bottom:2.5mm">Quale attrezzo del kit serve a quale esercizio</p>
+    <table class="map"><thead><tr><th></th><th>§1</th><th>§2</th><th>§3</th><th>§4</th><th>§5</th><th>§6</th><th>§7</th><th>§8</th><th>§9</th></tr></thead><tbody><tr><td class='tn'>1 · Periodo e frequenza</td><td></td><td></td><td>●</td><td>●</td><td>●</td><td></td><td>●</td><td></td><td></td></tr><tr><td class='tn'>2 · v = λ · f</td><td>●</td><td>●</td><td>●</td><td>●</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td class='tn'>3 · Tipi di onda</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>●</td><td>●</td></tr><tr><td class='tn'>4 · Interferenza</td><td></td><td>●</td><td></td><td></td><td></td><td>●</td><td>●</td><td></td><td></td></tr><tr><td class='tn'>5 · Intensità e distanza</td><td></td><td>●</td><td>●</td><td>●</td><td>●</td><td></td><td></td><td></td><td></td></tr></tbody></table>
+    <p class="small" style="margin-top:2.5mm"><b>§1</b> le parole · <b>§2</b> proporzionale · <b>§3</b> numeri grandi e piccoli · <b>§4</b> girare una formula · <b>§5</b> frazioni e reciproci · <b>§6</b> il segno · <b>§7</b> il grafico · <b>§8</b> frecce · <b>§9</b> di che è fatta la roba</p>
+  </div>
+  <p class="small" style="margin-top:auto; padding-bottom:5mm">Esercizi dalla lezione <b>Onde meccaniche e acustica</b> dello Studypack, fermi all'intensità e alla distanza: suono e decibel restano fuori.</p>
+</div>
+<div class="foot"><span class="brand">PORTALE DEI FUTURI MEDICI</span><span class="num">01 / 09</span></div>
+</section><section class="page">
+<div class="head"><p class="eyebrow"><b>Esercizio 1</b> · periodo, frequenza, pulsazione</p><span class="tag casa">Base</span></div>
+<div class="content">
+<h1>Quante oscillazioni, quanto tempo.</h1>
+<p class="lead">Il periodo è il tempo di un'oscillazione completa, la frequenza è quante ne fai in un secondo. Una è l'inverso dell'altra.</p>
+<div class="box"><svg viewBox="0 0 590 200" style="width:100%;max-height:44mm" aria-label="Spostamento in funzione del tempo">
+<line x1="50" y1="100" x2="564" y2="100" stroke="#0C1D38" stroke-width="1.5"/>
+<line x1="50" y1="22" x2="50" y2="178" stroke="#0C1D38" stroke-width="1.5"/>
+<polyline points="50.0,100.0 52.5,96.1 55.0,92.2 57.5,88.4 60.0,84.6 62.5,80.8 65.0,77.2 67.5,73.6 70.0,70.1 72.5,66.8 75.0,63.6 77.5,60.5 80.0,57.6 82.5,54.8 85.0,52.2 87.5,49.8 90.0,47.7 92.5,45.7 95.0,43.9 97.5,42.4 100.0,41.0 102.5,39.9 105.0,39.1 107.5,38.5 110.0,38.1 112.5,38.0 115.0,38.1 117.5,38.5 120.0,39.1 122.5,39.9 125.0,41.0 127.5,42.4 130.0,43.9 132.5,45.7 135.0,47.7 137.5,49.8 140.0,52.2 142.5,54.8 145.0,57.6 147.5,60.5 150.0,63.6 152.5,66.8 155.0,70.1 157.5,73.6 160.0,77.2 162.5,80.8 165.0,84.6 167.5,88.4 170.0,92.2 172.5,96.1 175.0,100.0 177.5,103.9 180.0,107.8 182.5,111.6 185.0,115.4 187.5,119.2 190.0,122.8 192.5,126.4 195.0,129.9 197.5,133.2 200.0,136.4 202.5,139.5 205.0,142.4 207.5,145.2 210.0,147.8 212.5,150.2 215.0,152.3 217.5,154.3 220.0,156.1 222.5,157.6 225.0,159.0 227.5,160.1 230.0,160.9 232.5,161.5 235.0,161.9 237.5,162.0 240.0,161.9 242.5,161.5 245.0,160.9 247.5,160.1 250.0,159.0 252.5,157.6 255.0,156.1 257.5,154.3 260.0,152.3 262.5,150.2 265.0,147.8 267.5,145.2 270.0,142.4 272.5,139.5 275.0,136.4 277.5,133.2 280.0,129.9 282.5,126.4 285.0,122.8 287.5,119.2 290.0,115.4 292.5,111.6 295.0,107.8 297.5,103.9 300.0,100.0 302.5,96.1 305.0,92.2 307.5,88.4 310.0,84.6 312.5,80.8 315.0,77.2 317.5,73.6 320.0,70.1 322.5,66.8 325.0,63.6 327.5,60.5 330.0,57.6 332.5,54.8 335.0,52.2 337.5,49.8 340.0,47.7 342.5,45.7 345.0,43.9 347.5,42.4 350.0,41.0 352.5,39.9 355.0,39.1 357.5,38.5 360.0,38.1 362.5,38.0 365.0,38.1 367.5,38.5 370.0,39.1 372.5,39.9 375.0,41.0 377.5,42.4 380.0,43.9 382.5,45.7 385.0,47.7 387.5,49.8 390.0,52.2 392.5,54.8 395.0,57.6 397.5,60.5 400.0,63.6 402.5,66.8 405.0,70.1 407.5,73.6 410.0,77.2 412.5,80.8 415.0,84.6 417.5,88.4 420.0,92.2 422.5,96.1 425.0,100.0 427.5,103.9 430.0,107.8 432.5,111.6 435.0,115.4 437.5,119.2 440.0,122.8 442.5,126.4 445.0,129.9 447.5,133.2 450.0,136.4 452.5,139.5 455.0,142.4 457.5,145.2 460.0,147.8 462.5,150.2 465.0,152.3 467.5,154.3 470.0,156.1 472.5,157.6 475.0,159.0 477.5,160.1 480.0,160.9 482.5,161.5 485.0,161.9 487.5,162.0 490.0,161.9 492.5,161.5 495.0,160.9 497.5,160.1 500.0,159.0 502.5,157.6 505.0,156.1 507.5,154.3 510.0,152.3 512.5,150.2 515.0,147.8 517.5,145.2 520.0,142.4 522.5,139.5 525.0,136.4 527.5,133.2 530.0,129.9 532.5,126.4 535.0,122.8 537.5,119.2 540.0,115.4 542.5,111.6 545.0,107.8 547.5,103.9 550.0,100.0" fill="none" stroke="#C4176C" stroke-width="3" stroke-linejoin="round"/>
+<line x1="50.0" y1="96" x2="50.0" y2="104" stroke="#0C1D38" stroke-width="1.5"/><text x="50.0" y="122" text-anchor="middle" font-size="12" fill="#3d3b36">0</text><line x1="175.0" y1="96" x2="175.0" y2="104" stroke="#0C1D38" stroke-width="1.5"/><text x="175.0" y="122" text-anchor="middle" font-size="12" fill="#3d3b36">0,25</text><line x1="300.0" y1="96" x2="300.0" y2="104" stroke="#0C1D38" stroke-width="1.5"/><text x="300.0" y="122" text-anchor="middle" font-size="12" fill="#3d3b36">0,5</text><line x1="425.0" y1="96" x2="425.0" y2="104" stroke="#0C1D38" stroke-width="1.5"/><text x="425.0" y="122" text-anchor="middle" font-size="12" fill="#3d3b36">0,75</text><line x1="550.0" y1="96" x2="550.0" y2="104" stroke="#0C1D38" stroke-width="1.5"/><text x="550.0" y="122" text-anchor="middle" font-size="12" fill="#3d3b36">1</text>
+<text x="564" y="92" text-anchor="end" font-size="12" font-weight="600" fill="#0C1D38">tempo (s)</text>
+<text x="58" y="20" font-size="12" font-weight="600" fill="#0C1D38">spostamento</text>
+</svg><p class="small">Spostamento di un punto del mezzo in funzione del tempo. Leggi prima gli assi, poi la curva.</p></div>
+<div class="q"><span class="badge out">a</span><div><p>Dal grafico leggi il <b>periodo</b> T (da una cresta alla successiva) e calcola la <b>frequenza</b> f.</p><div class="lines" data-n="2"></div></div></div>
+<div class="q"><span class="badge out">b</span><div><p>La nota La vibra a <b>440 Hz</b>. Quanto vale il suo periodo? Scrivilo in millisecondi.</p><div class="lines" data-n="3"></div></div></div>
+<div class="q"><span class="badge out">c</span><div><p><b>Bonus dalla live.</b> La pulsazione è ω = 2π · f, in radianti al secondo. Quanto vale per l'onda del grafico?</p><div class="lines" data-n="2"></div></div></div>
+<div class="box gold kit"><p class="kicker">Dal kit di partenza · cosa ti serve</p><div class="kr"><span class="kn">§7</span><div><b>Il grafico nell'ordine giusto</b><span>Prima gli assi: in orizzontale c'è il tempo in secondi, quindi la distanza fra due creste è un periodo, non una lunghezza d'onda.</span></div></div><div class="kr"><span class="kn">§5</span><div><b>Il reciproco</b><span>T e f sono uno «uno su» dell'altro: f = 1 ÷ T e T = 1 ÷ f.</span></div></div><div class="kr"><span class="kn">§4</span><div><b>Girare una formula</b><span>Da T = 1 ÷ f ricavi f isolandola. Controllo: secondi per hertz (1/s) deve dare 1.</span></div></div><div class="kr"><span class="kn">§3</span><div><b>Le potenze di dieci</b><span>0,0023 s si scrive 2,3 · 10⁻³ s: «milli» è un millesimo, e il numero in ms è più grande.</span></div></div></div>
+</div>
+<div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">02 / 09</span></div>
+</section><section class="page">
+<div class="head"><p class="eyebrow"><b>Esercizio 2</b> · v = λ · f e il cambio di mezzo</p><span class="tag casa">Esame</span></div>
+<div class="content">
+<h1>Una relazione, tre forme.</h1>
+<p class="lead">La velocità è lunghezza d'onda per frequenza. La velocità la fissa il mezzo, la frequenza la sceglie la sorgente.</p>
+<div class="q"><span class="badge out">a</span><div><p>Una nota La a <b>440 Hz</b> viaggia nell'aria a circa <b>343 m/s</b>. Quanto è lunga la sua onda?</p><div class="lines" data-n="3"></div></div></div>
+<div class="q"><span class="badge out">b</span><div><p>La stessa nota passa nell'acqua, dove il suono va a circa <b>1480 m/s</b>. Che cosa cambia: frequenza, velocità, lunghezza d'onda? Calcola la nuova lunghezza d'onda.</p><div class="lines" data-n="4"></div></div></div>
+<div class="q"><span class="badge out">c</span><div><p>Nello stesso mezzo <b>raddoppi la frequenza</b>. Che cosa succede alla velocità e alla lunghezza d'onda?</p><div class="lines" data-n="3"></div></div></div>
+<div class="q"><span class="badge out">d</span><div><p>Un'onda ha lunghezza d'onda <b>0,4 m</b> e frequenza <b>850 Hz</b>. Quanto vale la velocità?</p><div class="lines" data-n="2"></div></div></div>
+<div class="box gold kit"><p class="kicker">Dal kit di partenza · cosa ti serve</p><div class="kr"><span class="kn">§4</span><div><b>Girare una formula</b><span>Da v = λ · f ricavi λ = v ÷ f. Controllo: (m/s) ÷ (1/s) = m, una lunghezza.</span></div></div><div class="kr"><span class="kn">§2</span><div><b>Inversamente proporzionale</b><span>Con v fissa il prodotto λ · f non cambia: se f raddoppia, λ si dimezza. Il valore di partenza non serve.</span></div></div><div class="kr"><span class="kn">§1</span><div><b>La parola «costante»</b><span>Costante rispetto a cosa? La velocità lo è nel mezzo, la frequenza lo è quando cambi mezzo.</span></div></div><div class="kr"><span class="kn">§3</span><div><b>L'ordine di grandezza</b><span>Un suono udibile ha onde da decimi di metro a qualche metro: se ti esce un millimetro, hai girato male.</span></div></div></div>
+</div>
+<div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">03 / 09</span></div>
+</section><section class="page">
+<div class="head"><p class="eyebrow"><b>Esercizio 3</b> · trasversale o longitudinale</p><span class="tag casa">Risposta multipla</span></div>
+<div class="content">
+<h1>Come si muove la materia.</h1>
+<p class="lead">Il criterio è uno solo: come oscilla la materia rispetto alla direzione in cui viaggia l'onda. Una sola risposta è giusta.</p>
+<div class="q"><span class="badge out">a</span><div><p>Leghi un nastrino a un punto di una corda tesa e dai uno strappo: una gobba corre fino in fondo. Che cosa viaggia davvero lungo la corda?</p><div class="opts"><div class="o"><span class="ol">A</span><span>Il nastrino, che avanza fino all'altra estremità</span></div><div class="o"><span class="ol">B</span><span>La forma (la perturbazione) e l'energia; il nastrino sale e scende sul posto</span></div><div class="o"><span class="ol">C</span><span>La materia della corda, che si sposta tutta insieme alla gobba</span></div><div class="o"><span class="ol">D</span><span>Solo la forma: l'energia resta ferma dov'è</span></div><div class="o"><span class="ol">E</span><span>Il nastrino e l'energia, mentre la forma resta ferma</span></div></div></div></div>
+<div class="q"><span class="badge out">b</span><div><p>Classifica: (1) la corda di chitarra che vibra · (2) il suono nell'aria · (3) il suono nell'acqua.</p><div class="opts"><div class="o"><span class="ol">A</span><span>(1) trasversale · (2) trasversale · (3) trasversale</span></div><div class="o"><span class="ol">B</span><span>(1) trasversale · (2) longitudinale · (3) trasversale</span></div><div class="o"><span class="ol">C</span><span>(1) longitudinale · (2) trasversale · (3) longitudinale</span></div><div class="o"><span class="ol">D</span><span>(1) trasversale · (2) longitudinale · (3) longitudinale</span></div><div class="o"><span class="ol">E</span><span>(1) longitudinale · (2) longitudinale · (3) longitudinale</span></div></div></div></div>
+<div class="q"><span class="badge out">c</span><div><p>Perché in un fluido il suono non può essere un'onda trasversale?</p><div class="opts"><div class="o"><span class="ol">A</span><span>Perché il suono nei fluidi è troppo veloce per oscillare di lato</span></div><div class="o"><span class="ol">B</span><span>Perché in un fluido non ci sono particelle che possano oscillare</span></div><div class="o"><span class="ol">C</span><span>Perché nei fluidi il suono non trasporta energia</span></div><div class="o"><span class="ol">D</span><span>Perché nei fluidi la frequenza è sempre troppo bassa</span></div><div class="o"><span class="ol">E</span><span>Perché un fluido non regge le forze di taglio: può solo addensarsi e diradarsi lungo la propagazione</span></div></div></div></div>
+<div class="q"><span class="badge out">d</span><div><p>Quale di queste grandezze NON è trasportata da un'onda acustica?</p><div class="opts"><div class="o"><span class="ol">A</span><span>L'energia</span></div><div class="o"><span class="ol">B</span><span>La potenza</span></div><div class="o"><span class="ol">C</span><span>La massa</span></div><div class="o"><span class="ol">D</span><span>La quantità di moto</span></div><div class="o"><span class="ol">E</span><span>L'informazione</span></div></div></div></div>
+<div class="box gold kit"><p class="kicker">Dal kit di partenza · cosa ti serve</p><div class="kr"><span class="kn">§8</span><div><b>Quando un numero non basta</b><span>Oscillazione e propagazione sono due direzioni, come due frecce: perpendicolari (trasversale) o sulla stessa retta (longitudinale).</span></div></div><div class="kr"><span class="kn">§9.1</span><div><b>Tutto è fatto di particelle che si agitano</b><span>Un'onda meccanica è una perturbazione che le particelle si passano oscillando sul posto: per questo viaggia l'energia e non la materia.</span></div></div></div>
+</div>
+<div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">04 / 09</span></div>
+</section><section class="page">
+<div class="head"><p class="eyebrow"><b>Esercizio 4</b> · interferenza</p><span class="tag casa">Esame</span></div>
+<div class="content">
+<h1>Quando le onde si sommano.</h1>
+<p class="lead">Due onde che passano nello stesso punto sommano i loro spostamenti, con il segno: la cresta è positiva, la valle è negativa.</p>
+<div class="q"><span class="badge out">a</span><div><p>Due impulsi identici su una corda, alti <b>3 cm</b> ciascuno, arrivano insieme <b>cresta con cresta</b>. Quanto è alta la corda nel punto d'incontro? Come si chiama?</p><div class="lines" data-n="3"></div></div></div>
+<div class="q"><span class="badge out">b</span><div><p>Gli stessi due impulsi arrivano <b>cresta con valle</b> (+3 cm e −3 cm). Quanto vale lo spostamento? Come si chiama?</p><div class="lines" data-n="2"></div></div></div>
+<div class="q"><span class="badge out">c</span><div><p>Ora una cresta da <b>+5 cm</b> incontra una valle da <b>−3 cm</b>. Quanto vale lo spostamento nel punto d'incontro?</p><div class="lines" data-n="2"></div></div></div>
+<div class="q"><span class="badge out">d</span><div><p>Nel caso (a) l'ampiezza raddoppia. L'<b>energia</b> che cosa fa rispetto a quella di un solo impulso?</p><div class="lines" data-n="2"></div></div></div>
+<div class="q"><span class="badge out">e</span><div><p>Come fanno le cuffie con cancellazione del rumore a «spegnere» un rumore?</p><div class="lines" data-n="3"></div></div></div>
+<div class="box gold kit"><p class="kicker">Dal kit di partenza · cosa ti serve</p><div class="kr"><span class="kn">§6</span><div><b>Il segno</b><span>Cresta = +, valle = −. Non sommi due altezze: sommi due numeri col segno, e +5 −3 dà +2.</span></div></div><div class="kr"><span class="kn">§2</span><div><b>Proporzionale al quadrato</b><span>L'energia di un'onda va col quadrato dell'ampiezza: ampiezza ×2, energia ×4. Il fattore va elevato al quadrato prima di applicarlo.</span></div></div><div class="kr"><span class="kn">§7</span><div><b>Il grafico dall'asse</b><span>Creste e valli si leggono rispetto all'asse orizzontale: sopra è positivo, sotto è negativo.</span></div></div></div>
+</div>
+<div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">05 / 09</span></div>
+</section><section class="page">
+<div class="head"><p class="eyebrow"><b>Esercizio 5</b> · intensità e distanza</p><span class="tag casa">Risposta multipla</span></div>
+<div class="content">
+<h1>Più lontano, più spalmata.</h1>
+<p class="lead">Una sorgente che emette in tutte le direzioni distribuisce la potenza su una sfera, e la superficie di una sfera cresce con il quadrato del raggio. Una sola risposta è giusta.</p>
+<div class="box soft" style="padding:3.5mm 5mm"><p class="mono-f">Intensità = Potenza ÷ (4π × Distanza²)<br>Intensità ∝ 1 ÷ Distanza² · misurata in W/m²</p></div>
+<div class="q"><span class="badge out">a</span><div><p>Ti allontani da un altoparlante passando da <b>2 m a 4 m</b>. Che cosa succede all'intensità?</p><div class="opts"><div class="o"><span class="ol">A</span><span>Si dimezza</span></div><div class="o"><span class="ol">B</span><span>Diventa un quarto</span></div><div class="o"><span class="ol">C</span><span>Diventa un ottavo</span></div><div class="o"><span class="ol">D</span><span>Raddoppia</span></div><div class="o"><span class="ol">E</span><span>Non cambia</span></div></div></div></div>
+<div class="q"><span class="badge out">b</span><div><p>Ti allontani da <b>2 m a 6 m</b>. Di quante volte cala l'intensità?</p><div class="opts"><div class="o"><span class="ol">A</span><span>3 volte</span></div><div class="o"><span class="ol">B</span><span>6 volte</span></div><div class="o"><span class="ol">C</span><span>12 volte</span></div><div class="o"><span class="ol">D</span><span>9 volte</span></div><div class="o"><span class="ol">E</span><span>36 volte</span></div></div></div></div>
+<div class="q"><span class="badge out">c</span><div><p>Una sorgente da <b>0,2 W</b> emette uniformemente in tutte le direzioni. Che intensità arriva a <b>2 m</b>?</p><div class="opts"><div class="o"><span class="ol">A</span><span>5 · 10⁻² W/m²</span></div><div class="o"><span class="ol">B</span><span>1,3 · 10⁻² W/m²</span></div><div class="o"><span class="ol">C</span><span>4 · 10⁻³ W/m²</span></div><div class="o"><span class="ol">D</span><span>8 · 10⁻³ W/m²</span></div><div class="o"><span class="ol">E</span><span>4 · 10⁻⁴ W/m²</span></div></div></div></div>
+<div class="q"><span class="badge out">d</span><div><p>Per la stessa sorgente, qual è l'intensità a <b>4 m</b>? Ragiona dal risultato precedente, senza rifare tutto il conto.</p><div class="opts"><div class="o"><span class="ol">A</span><span>1 · 10⁻³ W/m²</span></div><div class="o"><span class="ol">B</span><span>2 · 10⁻³ W/m²</span></div><div class="o"><span class="ol">C</span><span>4 · 10⁻³ W/m²</span></div><div class="o"><span class="ol">D</span><span>5 · 10⁻⁴ W/m²</span></div><div class="o"><span class="ol">E</span><span>2,5 · 10⁻⁴ W/m²</span></div></div></div></div>
+<div class="box gold kit"><p class="kicker">Dal kit di partenza · cosa ti serve</p><div class="kr"><span class="kn">§2</span><div><b>Inversamente proporzionale al quadrato</b><span>Raddoppi la distanza, l'effetto scende a un quarto; triplichi, a un nono. Chiediti di che fattore moltiplichi la distanza, poi elevalo al quadrato e mettilo al denominatore.</span></div></div><div class="kr"><span class="kn">§5</span><div><b>Le frazioni</b><span>Un quarto e un nono sono frazioni: 1 ÷ 4 e 1 ÷ 9.</span></div></div><div class="kr"><span class="kn">§4</span><div><b>Girare una formula</b><span>Prima di sostituire, isola l'incognita. Controllo: watt diviso metri quadrati dà W/m².</span></div></div><div class="kr"><span class="kn">§3</span><div><b>Le potenze di dieci</b><span>Il risultato è un numero piccolo: scrivilo come 4 · 10⁻³ e controlla l'ordine di grandezza.</span></div></div></div>
+</div>
+<div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">06 / 09</span></div>
+</section><section class="page">
+<div class="head"><p class="eyebrow"><b>Soluzioni</b> · esercizi 1, 2 e 3</p></div>
+<div class="content">
+<h1>Soluzioni, con i passaggi.</h1>
+<div class="solgroup"><p class="kicker">Esercizio 1</p>
+<div class="s"><span class="badge">a</span><p>Dal grafico due oscillazioni complete fanno 1 s: da una cresta alla successiva passa <b>T = 0,5 s</b>. f = 1 ÷ T = 1 ÷ 0,5 = <b>2 Hz</b> (2 oscillazioni al secondo).</p></div>
+<div class="s"><span class="badge">b</span><p>T = 1 ÷ f = 1 ÷ 440 ≈ 0,0023 s, cioè <b>≈ 2,3 ms</b>. Unità: 1 ÷ Hz = s ✓.</p></div>
+<div class="s"><span class="badge">c</span><p>ω = 2π · f = 2π · 2 = 4π ≈ <b>12,6 rad/s</b>. Un giro completo (2π) due volte al secondo.</p></div></div>
+<div class="solgroup"><p class="kicker">Esercizio 2</p>
+<div class="s"><span class="badge">a</span><p>λ = v ÷ f = 343 ÷ 440 ≈ <b>0,78 m</b> (circa 78 cm). Controllo: (m/s) ÷ (1/s) = m ✓; ordine di grandezza plausibile ✓.</p></div>
+<div class="s"><span class="badge">b</span><p>La frequenza resta <b>440 Hz</b> (la decide la sorgente). Cambia la velocità, e quindi λ = 1480 ÷ 440 ≈ <b>3,4 m</b>: più veloce nel mezzo, più lunga l'onda.</p></div>
+<div class="s"><span class="badge">c</span><p>La <b>velocità resta la stessa</b> (la fissa il mezzo); la <b>lunghezza d'onda si dimezza</b>, perché il prodotto λ · f deve restare costante.</p></div>
+<div class="s"><span class="badge">d</span><p>v = λ · f = 0,4 × 850 = <b>340 m/s</b>.</p></div></div>
+<div class="solgroup"><p class="kicker">Esercizio 3 · B · D · E · C</p>
+<div class="s"><span class="badge">a</span><p><b>B.</b> Viaggiano la forma e l'energia; il nastrino sale e scende sul posto. A e C portano la materia lungo la corda, D e E staccano forma ed energia, che viaggiano insieme.</p></div>
+<div class="s"><span class="badge">b</span><p><b>D.</b> La corda oscilla di traverso: trasversale. Aria e acqua sono fluidi e le loro particelle vanno avanti e indietro nel verso del moto: longitudinali. La trappola (B) è pensare «onda nell'acqua = trasversale».</p></div>
+<div class="s"><span class="badge">c</span><p><b>E.</b> Un fluido non sopporta le forze di taglio, quindi non può sostenere un'oscillazione perpendicolare alla propagazione. Le altre opzioni inventano una causa: le particelle ci sono (B) e l'energia viaggia (C).</p></div>
+<div class="s"><span class="badge">d</span><p><b>C.</b> La massa non viaggia: l'aria oscilla sul posto. Energia, potenza, quantità di moto e informazione sono tutte trasportate.</p></div></div>
+</div>
+<div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">07 / 09</span></div>
+</section><section class="page">
+<div class="head"><p class="eyebrow"><b>Soluzioni</b> · esercizi 4 e 5</p></div>
+<div class="content">
+<h1>Soluzioni, con i passaggi.</h1>
+<div class="solgroup"><p class="kicker">Esercizio 4</p>
+<div class="s"><span class="badge">a</span><p>+3 + 3 = <b>6 cm</b>: l'ampiezza raddoppia. È interferenza <b>costruttiva</b>.</p></div>
+<div class="s"><span class="badge">b</span><p>+3 − 3 = <b>0 cm</b>: la corda resta ferma in quel punto. È interferenza <b>distruttiva</b>.</p></div>
+<div class="s"><span class="badge">c</span><p>+5 − 3 = <b>+2 cm</b>. La somma ha il segno dell'impulso più grande.</p></div>
+<div class="s"><span class="badge">d</span><p>L'energia va col quadrato dell'ampiezza: ampiezza ×2 ⇒ energia ×2² = <b>×4</b> (quadruplica, non raddoppia).</p></div>
+<div class="s"><span class="badge">e</span><p>Le cuffie ascoltano il rumore e generano un'onda <b>in opposizione di fase</b> con la stessa ampiezza: la somma tende a zero, interferenza distruttiva.</p></div></div>
+<div class="solgroup"><p class="kicker">Esercizio 5 · B · D · C · A</p>
+<div class="s"><span class="badge">a</span><p><b>B.</b> Distanza ×2 ⇒ intensità ÷ 2² = ÷ 4. La trappola (A) è dimezzare, cioè trattare la legge come lineare.</p></div>
+<div class="s"><span class="badge">b</span><p><b>D.</b> Distanza ×3 (6 ÷ 2) ⇒ intensità ÷ 3² = ÷ 9. Le trappole: 3 volte (A) dimentica il quadrato, 36 (E) lo applica alla distanza finale invece che al fattore.</p></div>
+<div class="s"><span class="badge">c</span><p><b>C.</b> I = P ÷ (4π · d²) = 0,2 ÷ (16π) ≈ 0,2 ÷ 50,3 ≈ 4 · 10⁻³ W/m². Trappole: 5 · 10⁻² è P ÷ d² (senza la sfera), 1,3 · 10⁻² dimentica π, 8 · 10⁻³ non eleva la distanza al quadrato.</p></div>
+<div class="s"><span class="badge">d</span><p><b>A.</b> Da 2 m a 4 m la distanza raddoppia, l'intensità si divide per 4: 4 · 10⁻³ ÷ 4 ≈ 1 · 10⁻³ W/m². Le trappole: 2 · 10⁻³ divide per 2, 5 · 10⁻⁴ per 8, 2,5 · 10⁻⁴ per 16.</p></div></div>
+<div class="box navy" style="margin-top:2mm"><p class="kicker" style="color:var(--oro)">I tre controlli, sempre</p>
+<p style="font-size:12pt;font-weight:600">Le unità tornano? L'ordine di grandezza è plausibile? Il verso è quello giusto?</p>
+<p class="small" style="color:#c9d3e3">Sono la stessa domanda posta a tre livelli e, insieme, intercettano quasi tutti gli errori.</p></div>
+</div>
+<div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">08 / 09</span></div>
+</section><section class="page">
+<div class="head"><p class="eyebrow"><b>Dopo gli esercizi</b></p></div>
+<div class="content">
+<h1>Dove ti sei bloccato?</h1>
+<p class="lead">Quando un esercizio non torna, non rileggere tre volte lo stesso paragrafo: guarda quale attrezzo manca.</p>
+<table class="stuck"><thead><tr><th>Se ti sei bloccato su…</th><th>Apri nel kit</th></tr></thead><tbody>
+<tr><td>girare la formula, trovare λ o f</td><td><b>§4</b> Girare una formula senza avere paura</td></tr>
+<tr><td>«raddoppio, dimezzo, quadruplica», «un quarto»</td><td><b>§2</b> «Proporzionale», la parola più usata del corso</td></tr>
+<tr><td>0,0023 s, 4 · 10⁻³ W/m², milli e mega</td><td><b>§3</b> Numeri troppo grandi e troppo piccoli</td></tr>
+<tr><td>T = 1 ÷ f, «uno su», un nono</td><td><b>§5</b> Le frazioni e quel «uno su»</td></tr>
+<tr><td>cresta +, valle −, il risultato col segno sbagliato</td><td><b>§6</b> Il triangolino e i numeri con il segno</td></tr>
+<tr><td>leggere T dal grafico, creste, asse orizzontale</td><td><b>§7</b> Guardare un grafico nell'ordine giusto</td></tr>
+<tr><td>trasversale o longitudinale, direzione dell'oscillazione</td><td><b>§8</b> Quando un numero non basta</td></tr>
+<tr><td>«la materia resta sul posto», particelle che oscillano</td><td><b>§9.1</b> Tutto è fatto di particelle</td></tr>
+</tbody></table>
+<div class="box gold"><p class="kicker">Se vuoi di più</p><p>Questi cinque esercizi vengono dalla lezione <b>Onde meccaniche e acustica</b> dello Studypack del Portale dei Futuri Medici: lì trovi altri esercizi svolti, la scheda di sintesi, le trappole d'esame e i quiz, anche su suono, decibel ed effetto Doppler.</p></div>
+<div class="fill" style="margin-top:4mm"><span class="lbl">Quello che mi ha bloccato di più</span><span class="ln"></span></div>
+<div class="lines" data-n="4"></div>
+</div>
+<div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">09 / 09</span></div>
+</section>
+<script>document.querySelectorAll('.lines').forEach(function(e){var n=+e.dataset.n||2;for(var i=0;i<n;i++)e.appendChild(document.createElement('i'));});</script>
+<script>(function(){var ps=document.querySelectorAll('.page');ps.forEach(function(p){var s=document.createElement('div');s.className='sheet';p.parentNode.insertBefore(s,p);s.appendChild(p);});
+function z(){var w=document.documentElement.clientWidth-24,a=210/25.4*96;document.documentElement.style.setProperty('--z',Math.min(1,w/a));}
+z();addEventListener('resize',z);
+if(/iPhone|iPad|iPod/.test(navigator.userAgent)){var v=document.querySelector('meta[name="viewport"]');v.content+=', maximum-scale=1';}})();</script>
+</body></html>
